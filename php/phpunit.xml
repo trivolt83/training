@@ -8,17 +8,23 @@
   <coverage processUncoveredFiles="true">
     <include>
       <directory suffix=".php">assessment-challenges/*/src</directory>
+      <directory suffix=".php">tdd-katas</directory>
     </include>
     <exclude>
       <directory suffix=".php">assessment-challenges/*/tests</directory>
+      <directory suffix="Test.php">tdd-katas</directory>
+      <directory suffix="main.php">tdd-katas</directory>
     </exclude>
     <report>
       <html outputDirectory="code-coverage" lowUpperBound="35" highLowerBound="70"/>
     </report>
   </coverage>
   <testsuites>
-    <testsuite name="all">
+    <testsuite name="assessment">
       <directory>assessment-challenges/</directory>
+    </testsuite>
+    <testsuite name="tdd">
+      <directory>tdd-katas/</directory>
     </testsuite>
   </testsuites>
   <logging/>
