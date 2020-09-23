@@ -36,4 +36,5 @@ If you want code coverage, enable xdebug first and then run the unit tests:
 ```bash
 enable_xdebug
 ./vendor/bin/phpunit
+disable_xdebug
 ```
