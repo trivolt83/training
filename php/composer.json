@@ -1,0 +1,15 @@
+{
+    "name": "trivolt83/php-training",
+    "authors": [
+        {
+            "name": "trivolt83"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    }
+}
