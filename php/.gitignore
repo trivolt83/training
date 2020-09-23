@@ -1,1 +1,3 @@
 /vendor
+/code-coverage
+/.phpunit.result.cache

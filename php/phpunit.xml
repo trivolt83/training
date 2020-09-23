@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    bootstrap="./vendor/autoload.php"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+    colors="true"
+    verbose="true">
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">assessment-challenges/*/src</directory>
+    </include>
+    <exclude>
+      <directory suffix=".php">assessment-challenges/*/tests</directory>
+    </exclude>
+    <report>
+      <html outputDirectory="code-coverage" lowUpperBound="35" highLowerBound="70"/>
+    </report>
+  </coverage>
+  <testsuites>
+    <testsuite name="all">
+      <directory>assessment-challenges/</directory>
+    </testsuite>
+  </testsuites>
+  <logging/>
+</phpunit>
